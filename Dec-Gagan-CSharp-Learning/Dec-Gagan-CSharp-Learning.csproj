@@ -54,6 +54,8 @@
     <Compile Include="ControlFlow\EvenNum.cs" />
     <Compile Include="HomyFoods\Restaurant.cs" />
     <Compile Include="HomyFoods\sampleTest.cs" />
+    <Compile Include="HomyFoods\Customer.cs" />
+    <Compile Include="HomyFoods\RuntestCustom.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

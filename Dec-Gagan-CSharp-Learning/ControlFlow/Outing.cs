@@ -10,7 +10,7 @@ namespace Dec_Gagan_CSharp_Learning.ControlFlow
         string condition = "sunny";
         double temp = 45;
         [TestMethod]
-        public void TestMethod1()
+        protected void TestMethod1()
         {
             if(condition== "sunny")
             {

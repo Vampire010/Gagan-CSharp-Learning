@@ -7,9 +7,9 @@ namespace Dec_Gagan_CSharp_Learning.ControlFlow
     public class restoFoods
     {
         [TestMethod]
-        public void TestMethod1()
+        public void OrderFood(string orderFood)
         {
-            string orderFood = "VegMeals";
+            //string orderFood = "VegMeals";
 
             switch (orderFood)
             {

@@ -24,7 +24,7 @@ namespace Dec_Gagan_CSharp_Learning.HomyFoods
         string restaurantAddres = "#2th street , Newton - Newyork";
 
         [TestMethod]
-        public void TestMethod1()
+        public void orderdFood()
         {
             Console.WriteLine("restaurantName: "+ restaurantName);
 
