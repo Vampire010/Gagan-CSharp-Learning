@@ -3,21 +3,30 @@ using System;
 
 namespace Dec_Gagan_CSharp_Learning.HomyFoods
 {
-    class Customer
+    public class Customer
     {
         public string customerID;
         public string customerName;
         public string address;
         public long conatctNumber;
 
-        public void displayCustomerDetails(string customerID , string customerName , string address , long conatctNumber)
-        {
 
+        //No Argument Constructor
+        public Customer()
+        {
+            Console.WriteLine("********************No Argument Constructor*********************");
+        } 
+
+        public Customer(string customerID, string customerName , string address, long conatctNumber)
+        {
             this.customerID = customerID;
             this.customerName = customerName;
             this.address = address;
-            this.conatctNumber= conatctNumber;
+            this.conatctNumber = conatctNumber;
+        }
 
+        public void displayCustomerDetails()
+        {
             Console.WriteLine("*****************************************");
             Console.WriteLine("customerID: " + customerID);
             Console.WriteLine("customerName: " + customerName);

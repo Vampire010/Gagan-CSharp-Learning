@@ -10,12 +10,11 @@ namespace Dec_Gagan_CSharp_Learning.HomyFoods
         [TestMethod]
         public void TestRunner()
         {
-            Customer customer = new Customer();
-            customer.displayCustomerDetails("C101","John","24th Street newtown",9876543210);
-            restoFoods res = new restoFoods();
-            res.OrderFood("Juice");
-            RuntestCustom ot = new RuntestCustom();
-            ot.TestMethod1();
+            //Customer customer1 = new Customer();
+            PremiumCustomer reg = new PremiumCustomer("C101", "John", "24th Street newtown", 9876543210);
+
+            reg.displayCustomerDetails();
+         
         }
     }
 }
