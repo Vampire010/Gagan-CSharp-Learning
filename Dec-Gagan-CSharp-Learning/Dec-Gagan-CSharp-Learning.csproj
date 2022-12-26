@@ -52,6 +52,7 @@
     <Compile Include="ControlFlow\Outing.cs" />
     <Compile Include="ControlFlow\restoFoods.cs" />
     <Compile Include="ControlFlow\EvenNum.cs" />
+    <Compile Include="HomyFoods\Billing.cs" />
     <Compile Include="HomyFoods\GuestCustomer.cs" />
     <Compile Include="HomyFoods\PremiumCustomer.cs" />
     <Compile Include="HomyFoods\RegularCustomer.cs" />

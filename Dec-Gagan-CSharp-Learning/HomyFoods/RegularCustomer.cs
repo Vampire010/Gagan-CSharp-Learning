@@ -15,8 +15,21 @@ namespace Dec_Gagan_CSharp_Learning.HomyFoods
             this.address = address;
             this.conatctNumber = conatctNumber;
             Console.WriteLine("******RegularCustomer*************");
+        }
+
+        override
+        public double CustomerBilling(double price)
+        {
+            Console.WriteLine("******RegularCustomer Billing*************");
+
+            Console.WriteLine("TotalPrice Before Discount: " + price);
+
+            double totalprice = price - (price * discountforRegularCustomer / 100);
+            Console.WriteLine("TotalPrice After Discount: " + totalprice);
+            Console.WriteLine("************************************");
+
+            return (double)price;
 
         }
-        
     }
 }

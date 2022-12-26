@@ -3,12 +3,16 @@ using System;
 
 namespace Dec_Gagan_CSharp_Learning.HomyFoods
 {
-    public class Customer
+    public class Customer : Billing
     {
         public string customerID;
         public string customerName;
         public string address;
         public long conatctNumber;
+
+        public const double discountforRegularCustomer = 10;
+        public const double discountforPremiumCustomer = 20;
+        public const double deliveryCharge = 20;
 
 
         //No Argument Constructor
@@ -25,6 +29,12 @@ namespace Dec_Gagan_CSharp_Learning.HomyFoods
             this.conatctNumber = conatctNumber;
         }
 
+        public virtual double CustomerBilling(double price)
+        {
+
+            return (double)price;
+        }
+
         public void displayCustomerDetails()
         {
             Console.WriteLine("*****************************************");
@@ -34,6 +44,29 @@ namespace Dec_Gagan_CSharp_Learning.HomyFoods
             Console.WriteLine("conatctNumber: " + conatctNumber);
             Console.WriteLine("*****************************************");
         }
+
+        public void updateDetails(long conatctNumber)
+        {
+            this.conatctNumber=conatctNumber;
+            Console.WriteLine("****************** Updated Customer conatctNumber***********************");
+            Console.WriteLine("customerID: " + customerID);
+            Console.WriteLine("customerName: " + customerName);
+            Console.WriteLine("address: " + address);
+            Console.WriteLine("conatctNumber: " + conatctNumber);
+            Console.WriteLine("*****************************************");
+        }
+        public void updateDetails(string Address)
+        {
+            this.address=Address;
+            Console.WriteLine("****************** Updated Customer Address ***********************");
+            Console.WriteLine("customerID: " + customerID);
+            Console.WriteLine("customerName: " + customerName);
+            Console.WriteLine("address: " + address);
+            Console.WriteLine("conatctNumber: " + conatctNumber);
+            Console.WriteLine("*****************************************");
+
+        }
+        
     }
 }
 
