@@ -7,9 +7,11 @@ namespace Dec_Gagan_CSharp_Learning.ControlFlow
     public class restoFoods
     {
         [TestMethod]
-        public void OrderFood(string orderFood)
+        public void OrderFood()
         {
-            //string orderFood = "VegMeals";
+            Console.WriteLine("Enetr the food Item to order : ");
+            string orderFood = Console.ReadLine();
+            Console.ReadKey();
 
             switch (orderFood)
             {

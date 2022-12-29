@@ -49,9 +49,14 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CollectionsExample\ArrayListEx.cs" />
+    <Compile Include="CollectionsExample\Citynames.cs" />
+    <Compile Include="CollectionsExample\DictionaryEx.cs" />
+    <Compile Include="CollectionsExample\HashTableEx.cs" />
     <Compile Include="ControlFlow\Outing.cs" />
     <Compile Include="ControlFlow\restoFoods.cs" />
     <Compile Include="ControlFlow\EvenNum.cs" />
+    <Compile Include="ControlFlow\student.cs" />
     <Compile Include="HomyFoods\Billing.cs" />
     <Compile Include="HomyFoods\GuestCustomer.cs" />
     <Compile Include="HomyFoods\PremiumCustomer.cs" />
