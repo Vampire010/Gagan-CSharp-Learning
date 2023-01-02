@@ -9,12 +9,11 @@ namespace Gagan_Selenium_Learning
             Console.WriteLine("Launch Chrome Browser");
             Console.WriteLine("Navigate to https://parabank.parasoft.com/");
         }
+
         [TestCase("Vampire","!@#$@")]
         [TestCase("Devil", "!@Dev1234")]
         [TestCase("Ghost", "!@ght09876")]
-
-
-        // [Test]
+        //[Test]
         public void Test1(string user , string userpassword)
         {
             Console.WriteLine("Enetr user name: " + user);
