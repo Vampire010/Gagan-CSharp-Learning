@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OpenQA.Selenium.Support.UI;
+using System.Threading;
 
 namespace Gagan_Selenium_Learning.ParaBank_Register
 {
@@ -28,6 +30,9 @@ namespace Gagan_Selenium_Learning.ParaBank_Register
         [Test]
         public void Test1()
         {
+
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+
             //LinkText
             /*IWebElement registerLnk = _driver.FindElement(By.LinkText("Register"));
             registerLnk.Click(); */
@@ -62,16 +67,25 @@ namespace Gagan_Selenium_Learning.ParaBank_Register
             ssnTbox.SendKeys("2133651412");
 
             IWebElement usernameTbox = _driver.FindElement(By.XPath("//input[@id=\"customer.username\" and @name=\"customer.username\"]"));
-            usernameTbox.SendKeys("RamaLaxman");
+            usernameTbox.SendKeys("RamaLaxman4");
 
             IWebElement passwordTbox = _driver.FindElement(By.XPath("//*[@id=\"customer.password\"]"));
-            passwordTbox.SendKeys("RamaLaxman1992");
+            passwordTbox.SendKeys("RamaLaxman1994");
            
             IWebElement confirmTbox = _driver.FindElement(By.XPath("/html/body/div[1]/div[3]/div[2]/form/table/tbody/tr[12]/td[2]/input"));
-            confirmTbox.SendKeys("RamaLaxman1992");
+            confirmTbox.SendKeys("RamaLaxman1994");
 
-            IWebElement submitBtn = _driver.FindElement(By.CssSelector("#customerForm > table > tbody > tr:nth-child(13) > td:nth-child(2) > input"));
+            WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
+            IWebElement submitBtn = wait.Until(ElementExists => ElementExists.FindElement(By.CssSelector("#customerForm > table > tbody > tr:nth-child(13) > td:nth-child(2) > input")));
+
+            //IWebElement submitBtn = _driver.FindElement(By.CssSelector("#customerForm > table > tbody > tr:nth-child(13) > td:nth-child(2) > input"));
             submitBtn.Submit();
+
+
+            Screenshot scrnshot = (_driver as ITakesScreenshot).GetScreenshot();
+            scrnshot.SaveAsFile("screenshot.png", ScreenshotImageFormat.Png);
+            scrnshot.SaveAsFile(@"C:\Users\giris\source\repos\Gagan-CSharp-Learning\Gagan_Selenium_Learning\Screnshots\UserRegistartion.jpeg");
+
 
         }
         [TearDown]
