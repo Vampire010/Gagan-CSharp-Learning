@@ -21,8 +21,4 @@
     <PackageReference Include="WebDriverManager" Version="2.16.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Screnshots\" />
-  </ItemGroup>
-
 </Project>

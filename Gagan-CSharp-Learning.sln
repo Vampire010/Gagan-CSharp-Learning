@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dec-Gagan-CSharp-Learning", "Dec-Gagan-CSharp-Learning\Dec-Gagan-CSharp-Learning.csproj", "{74E33E6A-CD26-4FDC-B310-AC404794334E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gagan_Selenium_Learning", "Gagan_Selenium_Learning\Gagan_Selenium_Learning.csproj", "{957DEF23-6724-44BB-9FC8-095FE24A934B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gagan_Selenium_Learning", "Gagan_Selenium_Learning\Gagan_Selenium_Learning.csproj", "{957DEF23-6724-44BB-9FC8-095FE24A934B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageObjectModelFrameWork", "PageObjectModelFrameWork\PageObjectModelFrameWork.csproj", "{9458AF82-831C-4787-8F67-227A453A2DEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{957DEF23-6724-44BB-9FC8-095FE24A934B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{957DEF23-6724-44BB-9FC8-095FE24A934B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{957DEF23-6724-44BB-9FC8-095FE24A934B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9458AF82-831C-4787-8F67-227A453A2DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9458AF82-831C-4787-8F67-227A453A2DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9458AF82-831C-4787-8F67-227A453A2DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9458AF82-831C-4787-8F67-227A453A2DEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
