@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gagan_Selenium_Learning", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PageObjectModelFrameWork", "PageObjectModelFrameWork\PageObjectModelFrameWork.csproj", "{9458AF82-831C-4787-8F67-227A453A2DEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POM_DD_Hybrid_Driven_Framework", "POM_DD_Hybrid_Driven_Framework\POM_DD_Hybrid_Driven_Framework.csproj", "{030DD803-6DC8-41DD-8917-5CD1FE35788B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POM_DD_Hybrid_Driven_Framework", "POM_DD_Hybrid_Driven_Framework\POM_DD_Hybrid_Driven_Framework.csproj", "{030DD803-6DC8-41DD-8917-5CD1FE35788B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowProject1", "SpecFlowProject1\SpecFlowProject1.csproj", "{118C6991-773A-425A-BBB6-AA4734FA0C2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{030DD803-6DC8-41DD-8917-5CD1FE35788B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{030DD803-6DC8-41DD-8917-5CD1FE35788B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{030DD803-6DC8-41DD-8917-5CD1FE35788B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{118C6991-773A-425A-BBB6-AA4734FA0C2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{118C6991-773A-425A-BBB6-AA4734FA0C2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{118C6991-773A-425A-BBB6-AA4734FA0C2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{118C6991-773A-425A-BBB6-AA4734FA0C2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
